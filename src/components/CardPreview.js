@@ -34,7 +34,7 @@ const CardPreview = ({ cardData }) => {
       return cardData.cardColor;
     }
     if (cardData.cardColor === 'white') return '#FFFFFF';
-    return '#6B5BFF';
+    return '#563AFE';
   };
 
   // Calculate text color for custom backgrounds
@@ -48,7 +48,7 @@ const CardPreview = ({ cardData }) => {
   // Create pastel colors that complement the main color
   const getPastelColor = (baseColor) => {
     if (baseColor === '#FFFFFF') return '#F4DFF8';
-    if (baseColor === '#6B5BFF') return '#F4DFF8';
+    if (baseColor === '#563AFE') return '#F4DFF8';
     if (baseColor.startsWith('#')) {
       const hex = baseColor.replace('#', '');
       const bigint = parseInt(hex, 16);
